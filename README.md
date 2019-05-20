@@ -12,10 +12,10 @@ and overshoot criterias via 'pole assignment' method. And call this system 'refe
 In 'main.m' you can find design procedure for pole assignment.
 
 After the definition, now we can optimize P and I parameters as follows,
-  > Init randomly P and I parameters.
-  > Caluclate error between reference signal and reference system.
-  > Calculate error between reference signal and actual system.
-  > Try to minimize sum of squares of errors ( ISE : Integral Squared Error )
+  - Init randomly P and I parameters.
+  - Caluclate error between reference signal and reference system.
+  - Calculate error between reference signal and actual system.
+  - Try to minimize sum of squares of errors ( ISE : Integral Squared Error )
 
 For optimizaiton part, I used Hooke and Jeeves since we have only two parameters.
 But for PID you can use genetic algorithm or other optimization method. H&J is generally faster
